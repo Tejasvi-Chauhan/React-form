@@ -19,6 +19,7 @@ const App = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
+    
     console.log("data", state);
     alert("form is submitted");
   };
