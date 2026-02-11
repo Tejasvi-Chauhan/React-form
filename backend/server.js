@@ -1,9 +1,16 @@
+require("dotenv").config();
 
-// const PORT=require("env")
 const express=require('express')
-const app=express();
-const PORT=5000;
 
+const PORT=process.env.PORT ;
+
+const cors = require("cors");
+
+const app = express();
+
+app.use(cors());          
+
+app.use(express.json());
 
 
 app.get("/",(req,res)=>{
@@ -26,22 +33,12 @@ app.get("/",(req,res)=>{
   res.send(users);
 })
 
-  let users = [
-  {
-    id: 1,
-    name: "Ravi",
-    email: "ravi@gmail.com",
-    password: "123456",
-    
-  },
-  {
-    id: 2,
-    name: "Amit",
-    email: "amit@gmail.com",
-    password: "password",
-    
-  }
-];
+
+app.post("/data",(req,res)=>{
+  console.log(req.body);
+  res.json({ message: "Data received successfully" });
+
+})
 
 const user=users.filter((u)=>u.id==2);
 console.log(user[0].name);

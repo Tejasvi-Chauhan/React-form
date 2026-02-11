@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 const App = () => {
   const [state, setstate] = React.useState({
@@ -17,10 +18,10 @@ const App = () => {
     }));
   };
 
-  const handlesubmit = (e) => {
+  const handlesubmit = async (e) => {
     e.preventDefault();
-    
-    console.log("data", state);
+    const response=await axios.post("http://localhost:5000/data",state)
+   console.log("server response:", response);
     alert("form is submitted");
   };
 
@@ -32,7 +33,7 @@ const App = () => {
           <input
             type="text"
             placeholder="enter your name"
-           
+            value={state.firstname}
             name="firstname"
             onChange={handleChange}
             className="border rectangular"
