@@ -36,7 +36,7 @@ app.get("/",(req,res)=>{
 
 app.post("/data",(req,res)=>{
   console.log(req.body);
-  res.json({ message: "Data received successfully" });
+  res.status(200).json({message:"Data received successfully"});
 
 })
 
