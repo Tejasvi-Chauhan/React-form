@@ -14,8 +14,22 @@ app.use(express.json());
 
 
 app.get("/",(req,res)=>{
-
-
+  let users = [
+  {
+    id: 1,
+    name: "Ravi",
+    email: "ravi@gmail.com",
+    password: "123456",
+    
+  },
+  {
+    id: 2,
+    name: "Amit",
+    email: "amit@gmail.com",
+    password: "password",
+    
+  }
+];
   res.send(users);
 })
 
