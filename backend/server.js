@@ -40,11 +40,11 @@ app.post("/data",(req,res)=>{
 
 })
 
-// const user=users.filter((u)=>u.id==2);
-// console.log(user[0].name);
+const user=users.filter((u)=>u.id==2);
+console.log(user[0].name);
 
-const user=users.find((u)=>u.id==2);
-console.log(user.name);
+// const user=users.find((u)=>u.id==2);
+// console.log(user.name);
 
 app.listen(PORT,()=>{
     console.log(`Server is listening at ${PORT}`)
