@@ -21,7 +21,7 @@ const App = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     const response=await axios.post("http://localhost:5000/data",state)
-   console.log("server response:", response);
+     console.log("server response:", response);
     alert("form is submitted");
   };
 
@@ -58,7 +58,7 @@ const App = () => {
             onChange={handleChange}
             className="border rectangular"
           />
-          <label>phone no</label>
+          <label>Phone no</label>
           <input
             type="number"
             placeholder="enter your number"
