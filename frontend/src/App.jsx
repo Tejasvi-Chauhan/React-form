@@ -21,7 +21,7 @@ const App = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     const response=await axios.post("http://localhost:5000/data",state)
-     console.log("server response:", response);
+     console.log("server response:", response.data);
     alert("form is submitted");
   };
 
