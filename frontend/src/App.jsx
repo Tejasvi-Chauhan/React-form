@@ -39,7 +39,7 @@ const App = () => {
             className="border rectangular"
           />
 
-          <label> Last Name</label>
+          <label>Last Name</label>
           <input
             type="text"
             placeholder="enter your last name"
@@ -49,7 +49,7 @@ const App = () => {
             className="border rectangular"
           />
 
-          <label> Email</label>
+          <label>E-mail</label>
           <input
             type="email"
             placeholder="enter yout email"
@@ -58,7 +58,7 @@ const App = () => {
             onChange={handleChange}
             className="border rectangular"
           />
-          <label>Phone no</label>
+          <label>Phone no.</label>
           <input
             type="number"
             placeholder="enter your number"
@@ -68,7 +68,7 @@ const App = () => {
             className="border rectangular"
           />
 
-          <button type="submit">submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>
