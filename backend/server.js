@@ -22,11 +22,7 @@ app.get("/",(req,res)=>{
     password: "123456",
     
   },
-  {
-    id: 2,
-    name: "Amit",
-    email: "amit@gmail.com",
-    password: "password",
+
     
   }
 ];
