@@ -42,6 +42,9 @@ app.post("/data",(req,res)=>{
   res.status(200).json({message:"Data received successfully"});
 
 })
+app.get("/lib",(req,res)=>{
+  res.send("Lib");
+})
 
 const user=users.filter((u)=>u.id==2);
 console.log(user[0].name);
