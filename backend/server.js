@@ -23,7 +23,13 @@ app.get("/",(req,res)=>{
     
   },
 
+      {
+    id: 2,
+    name: "Amit",
+    email: "amit@gmail.com",
+    password: "password",
     
+  
   }
 ];
   res.send(users);
