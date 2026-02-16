@@ -46,9 +46,13 @@ app.get("/lib",(req,res)=>{
   res.send("Lib");
 })
 
-app.pos
-const user=users.filter((u)=>u.id==2);
-console.log(user[0].name);
+app.post("/datafor",(req,res)=>{
+  console.log(req.body);
+  res.res.status(200).json({message:"Data received successfully"});
+
+})
+
+
 
 // const user=users.find((u)=>u.id==2);
 // console.log(user.name);
