@@ -35,16 +35,14 @@ app.get("/",(req,res)=>{
   res.send(users);
 })
 
-
-app.post("/data",(req,res)=>{
-  
-  console.log(req.body);
-  res.status(200).json({message:"Data received successfully"});
-
-})
 app.get("/lib",(req,res)=>{
   res.send("Lib");
 })
+
+app.get("/lib",(req,res)=>{
+})
+const user=users.filter((u)=>u.id==2);
+console.log(user[0].name);
 
 app.post("/datafor",(req,res)=>{
   console.log(req.body);
